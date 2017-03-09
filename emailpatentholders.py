@@ -1,7 +1,7 @@
 import requests
 import json
 user_query = raw_input()
-api_key = '8hv4srmf33gIQNsjPlPBYkgxIp2wyf2Ncx1cr2nq'
+api_key = 'DEMO_KEY' 
 payload = {'query': user_query , 'limit': 20, 'api_key':api_key}
 response = requests.get('https://api.nasa.gov/patents/content',params=payload)
 output = set()
